@@ -177,7 +177,16 @@ $cta: #76B08D;
                 }
                 .case-description {
                     color: $lightDark;
+
+                    p:first-of-type {
+                        font-weight: bold;
+                    }
                 }
+            }
+
+            .case-divider-svg {
+                align-self: center;
+                fill: $lightDark;
             }
 
             .case-image {
@@ -196,13 +205,14 @@ $cta: #76B08D;
         /* relative for #work parent */
         position: relative;
         #work-hr {
+            display: none;
             position: absolute;
             content: '';
             width: 1px;
             border-left: 3px dashed $lightDark;
-            height: 100%;
-            left: 50%;
-            top: 0;
+            height: 80%;
+            left: calc(50% - 1px);
+            top: 10%;
         }
     }
 
@@ -317,7 +327,8 @@ $cta: #76B08D;
 .bg-text {
     color: $mainWhite;
     background-color: $mainDark;
-    padding: 3px;
+    padding: 5px;
+    text-transform: uppercase;
 }
 
 
