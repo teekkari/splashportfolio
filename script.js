@@ -48,6 +48,21 @@ function sendContactForm(event) {
 	if (document.getElementById('form-hunaja').checked) {
 		return;
 	}
+
+	const formEmailElem = document.getElementById('form-email');
+	const formNameElem = document.getElementById('form-name');
+	const formBodyElem = document.getElementById('form-body');
+
+	const data = {
+		email: formEmailElem.value,
+		name: formNameElem.value,
+		body: formBodyElem.value
+	}
+
+	if (data.email === "" || data.body === "") {
+		document.getElementById('contact-validation').style.height = "50px";
+		return;
+	}
 	
 	const submitBtn = event.target;
 	const sentMsg = document.getElementById('contact-sent');
@@ -55,9 +70,7 @@ function sendContactForm(event) {
 	submitBtn.disabled = true;
 	submitBtn.innerHTML = loadingSvg;
 
-	const formEmailElem = document.getElementById('form-email');
-	const formNameElem = document.getElementById('form-name');
-	const formBodyElem = document.getElementById('form-body');
+	
 
 	const postData = new FormData();
 	postData.append('email', formEmailElem.value);
@@ -77,10 +90,17 @@ function sendContactForm(event) {
 		});
 }
 
+function resetFormValidation() {
+	document.getElementById('contact-validation').style.height = "0px";
+}
+
 
 /* SETUP */
 window.addEventListener('DOMContentLoaded', (event) => {
 	document.getElementById('burger-menu-toggle').onclick = toggleBurgerMenu;
+
+	document.getElementById('form-email').onkeypress = resetFormValidation;
+	document.getElementById('form-body').onkeypress = resetFormValidation;
 	document.getElementById('contact-submit').onclick = sendContactForm;
 });
 

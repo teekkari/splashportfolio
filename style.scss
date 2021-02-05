@@ -258,6 +258,13 @@ $cta: #76B08D;
             box-shadow: 0px 5px 10px rgba(22, 22, 22, 0.2);
         }
 
+        #contact-validation {
+            letter-spacing: normal;
+            text-align: center;
+            height: 0px;
+            transition: height 0.3s;
+        }
+
         #contact-submit {
             -webkit-appearance: none;
             background-color: $cta;
