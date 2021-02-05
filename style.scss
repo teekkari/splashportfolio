@@ -258,13 +258,25 @@ $cta: #76B08D;
             box-shadow: 0px 5px 10px rgba(22, 22, 22, 0.2);
         }
 
-        input[type="submit"] {
+        #contact-submit {
+            -webkit-appearance: none;
             background-color: $cta;
-            color: $mainWhite;
+            color: $mainDark;
             border: none;
             width: 100%;
             font-size: 1.5em;
             font-weight: 800;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #contact-sent {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: 800;
+            transform: scale(0);
         }
 
 
@@ -332,6 +344,40 @@ $cta: #76B08D;
     background-color: $mainDark;
     padding: 5px;
     text-transform: uppercase;
+}
+
+.animate-spin {
+    animation-name: spin;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.animate-pop-out {
+    animation-name: pop-out;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;  
+}
+
+@keyframes pop-out {
+    0% { transform: scale(1.0); }
+    100% { transform: scale(0); }
+}
+
+.animate-pop-in {
+    animation-name: pop-in;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes pop-in {
+    0% { transform: scale(0); }
+    90% { transform: scale(1.1); }
+    100% { transform: scale(1.0); }
 }
 
 

@@ -131,7 +131,7 @@
         <h1>OTA YHTEYTTÄ</h1>
 
         <div class="contact-form">
-            <form>
+            <form action="#" method="post">
                 <div class="form-group">
                     <label for="form-email">email</label>
                     <input type="text" id="form-email" name="email">
@@ -147,7 +147,10 @@
                     <textarea id="form-body" name="body"></textarea>
                 </div>
 
-                <input type="submit" class="btn" value="LÄHETÄ">
+                <div class="form-group">
+                    <button id="contact-submit" class="btn">LÄHETÄ</button>
+                    <div id="contact-sent">LÄHETETTY!</div>
+                </div>
             </form>
         </div>
 
