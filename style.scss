@@ -262,7 +262,8 @@ $cta: #76B08D;
             letter-spacing: normal;
             text-align: center;
             height: 0px;
-            transition: height 0.3s;
+            opacity: 0;
+            transition: height 0.3s, opacity 0.1s;
         }
 
         #contact-submit {

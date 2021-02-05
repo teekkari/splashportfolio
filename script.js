@@ -92,6 +92,7 @@ function sendContactForm(event) {
 
 function resetFormValidation() {
 	document.getElementById('contact-validation').style.height = "0px";
+	document.getElementById('contact-validation').style.opacity = "100";
 }
 
 
