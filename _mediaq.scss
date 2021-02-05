@@ -138,8 +138,15 @@
         font-size: 0.6rem;
         height: 400px;
 
+
         .hero-wrapper {
             width: 85%;
+
+            .hero-cta {
+                letter-spacing: normal;
+                font-size: 0.8rem;
+            }
+
         }
         .illustrations {
             transform: scale(0.8);
