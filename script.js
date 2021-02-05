@@ -61,6 +61,7 @@ function sendContactForm(event) {
 
 	if (data.email === "" || data.body === "") {
 		document.getElementById('contact-validation').style.height = "50px";
+		document.getElementById('contact-validation').style.opacity = "100";
 		return;
 	}
 	
@@ -92,7 +93,7 @@ function sendContactForm(event) {
 
 function resetFormValidation() {
 	document.getElementById('contact-validation').style.height = "0px";
-	document.getElementById('contact-validation').style.opacity = "100";
+	document.getElementById('contact-validation').style.opacity = "0";
 }
 
 
