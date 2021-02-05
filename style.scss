@@ -38,10 +38,14 @@ $cta: #76B08D;
 
 
         .logo {
-            font-size: 50px;
-            font-weight: bold;
-            letter-spacing: -8px;
-            line-height: 120px;
+            display: flex;
+            align-items: center;
+
+            height: 120px;
+
+            img {
+                max-height: 64px;
+            }
         }
 
         .nav-wrapper {
@@ -205,14 +209,13 @@ $cta: #76B08D;
         /* relative for #work parent */
         position: relative;
         #work-hr {
-            display: none;
             position: absolute;
             content: '';
             width: 1px;
             border-left: 3px dashed $lightDark;
-            height: 80%;
+            height: 92%;
             left: calc(50% - 1px);
-            top: 10%;
+            top: 4%;
         }
     }
 
