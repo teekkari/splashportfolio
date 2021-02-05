@@ -64,7 +64,6 @@ function sendContactForm(event) {
 		method: "POST", 
 		body: postData
 	  }).then(res => {
-			console.log(res);
 			submitBtn.classList.add('animate-pop-out');
 
 			setTimeout( () => {
