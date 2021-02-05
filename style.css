@@ -292,8 +292,9 @@ html, body {
   letter-spacing: normal;
   text-align: center;
   height: 0px;
-  -webkit-transition: height 0.3s;
-  transition: height 0.3s;
+  opacity: 0;
+  -webkit-transition: height 0.3s, opacity 0.1s;
+  transition: height 0.3s, opacity 0.1s;
 }
 
 #contact .contact-form #contact-submit {
