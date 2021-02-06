@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="smoothscroll-polyfill.min.js"></script>
     <title>Lauri Anttila</title>
 </head>
 <body>
@@ -46,7 +47,7 @@
     </section>
 
     <section id="work">
-        <h1>WORK</h1>
+        <h1>KOKEMUS</h1>
         <div class="work-wrapper">
             
             <div class="case">
@@ -88,6 +89,25 @@
             <div class="case">
                 <div class="case-text">
                     <div class="case-title">
+                        CASE HABITTI.NET
+                    </div>
+                    <div class="case-description">
+                        <p>Websovellus rutiinien rakentamiseen</p>
+                        <p>Sovelluksen tarkoitus on helpottaa rutiinien luomista ja seurata onnistumista. Projekti on vielä työn alla, mutta funktionaalisuus löytyy.</p>
+                        <p>Taulukot on visualisoitu ChartJS:n avulla ja loppu on omaa toteutusta.</p>
+                        <p>Autentikaatio ja autorisointion tehty itse kirjoitetulla 'Bearer'-toteutuksella </p>
+                        <p>Pääasiallinen toteutus on ReactJS ja NodeJS + Express.</p>
+                        <p><a href="http://habitti.net" class="bg-text">Kokeile sovellusta</a></p>
+                    </div>
+                </div>
+                <div class="case-image">
+                    <img src="assets/habitti_showcase.png">
+                </div>
+            </div>
+
+            <div class="case">
+                <div class="case-text">
+                    <div class="case-title">
                         CASE LASKU-PATE
                     </div>
                     <div class="case-description">
@@ -108,10 +128,10 @@
                         CASE MÖKKIVARAUS
                     </div>
                     <div class="case-description">
-                        <p>Verkkosovellus suvun mökin varaukseen</p>
-                        <p>Käyttäjäkuntaan kuuluu suvun isovanhemmat, jolloin käytön helppous ja intuitiivisuus on ollut kriteerinä.</p>
+                        <p>Websovellus suvun mökin varaukseen</p>
+                        <p>Käyttäjäkuntaan kuuluu suvun isovanhemmat, joten käytön helppous ja intuitiivisuus on ollut kriteerinä.</p>
                         <p>Toteutettu ReactJS ja NodeJS + Express.</p>
-                        <p><a href="http://teekkari.net:3000/" class="bg-text">Live demo</a></p>
+                        <p><a href="http://teekkari.net:3000/" class="bg-text">Kokeile sovellusta</a></p>
                     </div>
                 </div>
                 <div class="case-image">
@@ -122,6 +142,8 @@
             <div id="work-hr"></div>
 
         </div>
+
+        <div class="work-wrapper work-github">Projektien lähdekoodit on saatavilla <a class="bg-text" href="https://github.com/teekkari/">Githubista.</a></div>
 
         
     </section>
@@ -163,6 +185,13 @@
             <img id="splash-2" src="assets/splash2.png">
         </div>
 
+    </section>
+
+    <section id="back-to-top">
+        <a href="#header" class="animate-suggest-bounce sscroll">
+            <img src="assets/go_up.png">
+            <div>Takaisin ylös</div>
+        </a>
     </section>
 
     <section id="footer">

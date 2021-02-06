@@ -219,6 +219,11 @@ $cta: #76B08D;
         }
     }
 
+    .work-github {
+        line-height: 1.5;
+        color: $lightDark;
+    }
+
 }
 
 /******** CONTACT **********/
@@ -299,6 +304,28 @@ $cta: #76B08D;
             -moz-transform-origin: 0 0; /* firefox scale fix */
         }
     }
+}
+
+#back-to-top{
+    background-color: $mainDark;
+    
+    letter-spacing: normal;
+    
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #979797;
+        text-decoration: none;
+
+        img {
+            max-width: 60px;
+            margin-bottom: 10px;
+        }
+    }
+
+    
 }
 
 /******** FOOTER **********/
@@ -388,6 +415,41 @@ $cta: #76B08D;
     0% { transform: scale(0); }
     90% { transform: scale(1.1); }
     100% { transform: scale(1.0); }
+}
+
+.animate-suggest-bounce {
+    animation-name: suggest-bounce;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0,.52,1,.64);
+
+    position: relative;
+}
+
+@keyframes suggest-bounce {
+    0% {
+        top: 0px;
+    }
+
+    5% {
+        top: -5px;
+    }
+    
+    10% {
+        top: 0px;
+    }
+
+    15% {
+        top: -5px;
+    }
+
+    20% {
+        top: 0px;
+    }
+
+    100% {
+        top: 0px;
+    }
 }
 
 
