@@ -246,6 +246,11 @@ html, body {
   top: 4%;
 }
 
+#work .work-github {
+  line-height: 1.5;
+  color: #666666;
+}
+
 /******** CONTACT **********/
 #contact {
   background-color: #3A3A3A;
@@ -330,6 +335,31 @@ html, body {
   left: 10px;
   -moz-transform-origin: 0 0;
   /* firefox scale fix */
+}
+
+#back-to-top {
+  background-color: #3A3A3A;
+  letter-spacing: normal;
+}
+
+#back-to-top a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #979797;
+  text-decoration: none;
+}
+
+#back-to-top a img {
+  max-width: 60px;
+  margin-bottom: 10px;
 }
 
 /******** FOOTER **********/
@@ -482,6 +512,60 @@ html, body {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+.animate-suggest-bounce {
+  -webkit-animation-name: suggest-bounce;
+          animation-name: suggest-bounce;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0, 0.52, 1, 0.64);
+          animation-timing-function: cubic-bezier(0, 0.52, 1, 0.64);
+  position: relative;
+}
+
+@-webkit-keyframes suggest-bounce {
+  0% {
+    top: 0px;
+  }
+  5% {
+    top: -5px;
+  }
+  10% {
+    top: 0px;
+  }
+  15% {
+    top: -5px;
+  }
+  20% {
+    top: 0px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes suggest-bounce {
+  0% {
+    top: 0px;
+  }
+  5% {
+    top: -5px;
+  }
+  10% {
+    top: 0px;
+  }
+  15% {
+    top: -5px;
+  }
+  20% {
+    top: 0px;
+  }
+  100% {
+    top: 0px;
   }
 }
 
