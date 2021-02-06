@@ -352,6 +352,10 @@ html, body {
   color: #eee3;
 }
 
+#footer .footer-copyright span {
+  display: inline-block;
+}
+
 /********* MISC ***********/
 .btn {
   padding: 25px 60px;
