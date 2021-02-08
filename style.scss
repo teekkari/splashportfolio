@@ -8,6 +8,7 @@ html, body {
     font-family: 'Sora', sans-serif;
     letter-spacing: 5px;
     overflow-x: hidden;
+    scroll-behaviour: smooth;
 }
 
 /****** VARIABLES ******/
@@ -27,6 +28,8 @@ $cta: #76B08D;
     height: 120px;
     overflow: hidden;
     transition: height, 0.2s;
+
+    outline: 0;
 
     .header-content {
         width: 70%;
@@ -157,6 +160,8 @@ $cta: #76B08D;
 
     color: $mainDark;
 
+    outline: 0;
+
     h1 {
         padding-left: 15%;
         font-size: 3.0em;
@@ -235,6 +240,8 @@ $cta: #76B08D;
 
     position: relative;
 
+    outline: 0;
+
     h1 {
         text-align: center;
         font-size: 2.0em;
@@ -311,6 +318,7 @@ $cta: #76B08D;
     
     letter-spacing: normal;
     
+    outline: 0;
 
     a {
         display: flex;

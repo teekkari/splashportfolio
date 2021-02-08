@@ -6,6 +6,7 @@ html, body {
   font-family: 'Sora', sans-serif;
   letter-spacing: 5px;
   overflow-x: hidden;
+  scroll-behaviour: smooth;
 }
 
 /****** VARIABLES ******/
@@ -17,6 +18,7 @@ html, body {
   overflow: hidden;
   -webkit-transition: height, 0.2s;
   transition: height, 0.2s;
+  outline: 0;
 }
 
 #header .header-content {
@@ -167,6 +169,7 @@ html, body {
   padding-bottom: 50px;
   letter-spacing: 2px;
   color: #3A3A3A;
+  outline: 0;
 }
 
 #work h1 {
@@ -257,6 +260,7 @@ html, body {
   color: #E8E8E8;
   padding: 50px 0px;
   position: relative;
+  outline: 0;
 }
 
 #contact h1 {
@@ -340,6 +344,7 @@ html, body {
 #back-to-top {
   background-color: #3A3A3A;
   letter-spacing: normal;
+  outline: 0;
 }
 
 #back-to-top a {
