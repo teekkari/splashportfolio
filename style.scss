@@ -383,6 +383,31 @@ $cta: #76B08D;
     }
 }
 
+.sm-btn {
+    padding: 5px 15px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background-color: $cta;
+    color: $mainDark;
+    cursor: pointer;
+
+    font-size: 1.0em;
+    font-weight: bold;
+    letter-spacing: normal;
+
+    
+
+    border-radius: 50px;
+    position: relative;
+    top: 0px;
+
+    transition: top 0.25s;
+
+    &:hover {
+        top: -2px;
+    }
+}
 
 .bg-text {
     color: $mainWhite;
@@ -390,6 +415,24 @@ $cta: #76B08D;
     padding: 5px;
     text-transform: uppercase;
 }
+
+.pill {
+    display: inline-block;
+    padding: 4px 10px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+
+    background-color: $mainDark;
+    color: $mainWhite;
+
+    font-weight: bold;
+    font-size: 0.8em;
+
+    border-radius: 50px;
+}
+
+
+/***** Animations *****/
 
 .animate-spin {
     animation-name: spin;
